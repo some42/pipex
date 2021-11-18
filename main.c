@@ -6,7 +6,7 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 00:32:33 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/17 22:55:40 by agaliste         ###   ########.fr       */
+/*   Updated: 2021/11/18 14:59:24 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	execcmd(char *argv, char **env)
 {
 	char	**cmd;
-	char *path;
+	char	*path;
 
 	cmd = ft_split(argv, ' ');
 	path = find_path(cmd[0], env);

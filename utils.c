@@ -6,7 +6,7 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 03:14:00 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/17 21:13:53 by agaliste         ###   ########.fr       */
+/*   Updated: 2021/11/18 15:02:13 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,8 @@ void	check_num_args(int argc)
 {
 	if (argc != 5)
 	{
-		ft_putstr_fd("Usage : ./pipex infile cmd1 cmd2 outfile\n", 2);
+		ft_putstr_fd("Arguments Error\n", 2);
+		ft_putstr_fd("Usage: ./pipex infile cmd1 cmd2 outfile\n", 2);
 		exit(EXIT_FAILURE);
 	}
 }
