@@ -6,7 +6,7 @@
 /*   By: agaliste <agaliste@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 03:14:00 by agaliste          #+#    #+#             */
-/*   Updated: 2021/11/22 17:52:25 by agaliste         ###   ########.fr       */
+/*   Updated: 2021/11/22 20:54:18 by agaliste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ char	*find_path(char *cmd, char **env)
 	char	**envvars;
 
 	i = 0;
-	while (ft_strnstr(env[i], "PATH", 4) == 0 && env[i] !=  NULL)
+	while (ft_strnstr(env[i], "PATH", 4) == 0 && env[i] != NULL)
 		i++;
 	if (env[i] == NULL)
-		exiterror("PATH NOT FOUND");
+		exiterror("Path not found");
 	envvars = ft_split(env[i] + 5, ':');
 	i = 0;
 	while (envvars[i])
